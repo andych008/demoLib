@@ -1,0 +1,22 @@
+apply plugin: 'maven'
+
+configurations {
+    resultArchives
+}
+
+uploadResultArchives {
+    repositories {
+        mavenDeployer {
+            repository(url: 'file://' + new File(rootDir.parentFile, 'dwvipRepo').absolutePath)
+            pom.project {
+                groupId 'com.dwvip'
+                artifactId project.name
+                version 1.0
+            }
+        }
+    }
+}
+
+artifacts{
+    resultArchives file: file('libs/AMap3DMap_6.4.1_AMapNavi_6.3.0.aar')
+}
