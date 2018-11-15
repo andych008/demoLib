@@ -11,12 +11,12 @@ uploadResultArchives {
             pom.project {
                 groupId 'com.dwvip.demolib'
                 artifactId project.name
-                version 0.1
+                version android.defaultConfig.versionName
             }
         }
     }
 }
 
 artifacts{
-    resultArchives file: file('libs/AMap3DMap_6.4.1_AMapNavi_6.3.0.aar')
+    resultArchives file: file(project.ext.aarPath)
 }

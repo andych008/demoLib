@@ -1,1 +1,1 @@
-include ':app', ':droidLib', ':javaLib', ':app2'
+include ':app', ':droidLib', ':javaLib', ':app2', ':wxImg'
