@@ -9,9 +9,9 @@ uploadResultArchives {
         mavenDeployer {
             repository(url: 'file://' + new File(rootDir.parentFile, 'dwvipRepo').absolutePath)
             pom.project {
-                groupId 'com.dwvip'
+                groupId 'com.dwvip.demolib'
                 artifactId project.name
-                version 1.0
+                version 0.1
             }
         }
     }

@@ -1,7 +1,7 @@
 apply plugin: 'maven'
 
 ext {// ext is a gradle closure allowing the declaration of global properties
-    PUBLISH_GROUP_ID = 'com.dwvip'
+    PUBLISH_GROUP_ID = 'com.dwvip.demolib'
     PUBLISH_ARTIFACT_ID = project.name
     PUBLISH_VERSION = android.defaultConfig.versionName
 }

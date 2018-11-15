@@ -27,3 +27,5 @@ dependencies {
 
     compileOnly 'com.android.support:appcompat-v7:26.1.0'
 }
+
+apply from: '../maven-release-aar.gradle'
