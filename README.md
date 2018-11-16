@@ -1,4 +1,4 @@
-# testLib
+# demoLib
 
 - javaLib是生成jar的示例
 - droidLib是生成aar的示例
