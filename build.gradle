@@ -17,7 +17,9 @@ buildscript {
 
 allprojects {
     repositories {
-        maven { url 'file://' + new File(rootDir.parentFile, 'dwvipRepo').absolutePath }
+//        maven { url 'file://' + new File(rootDir.parentFile, 'dwvipRepo').absolutePath }
+//        maven { url 'https://github.com/dwvip/repo/raw/master' }
+        maven { url 'https://dwvip.github.io/repo' }
         google()
         jcenter()
     }
