@@ -28,4 +28,5 @@ dependencies {
 
     implementation 'com.dwvip.demolib:droidLib:1.0'
     implementation 'com.dwvip.demolib:javaLib:0.2.0'
+    implementation 'com.dwvip.demolib:wxImg:1.1'
 }
