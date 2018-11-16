@@ -1,7 +1,6 @@
 # Todo List
 
-1. jar version
-1. flavor
+1. 如果有flavor，要怎么处理
 
 
 
