@@ -1,19 +1,16 @@
-apply plugin: "maven-publish"
+apply plugin: 'maven'
 
-publishing {
-    publications {
-        maven(MavenPublication) {
-            groupId 'com.dwvip.demolib'
-            artifactId project.name
-            version jar.version
-            //若是war包，就写components.web,若是jar包，就写components.java
-            from components.java
-        }
-    }
-    repositories {
-        maven {
-            url = 'file://' + new File(rootDir.parentFile, 'dwvipRepo').absolutePath
-        }
+version = jar.version
+
+uploadArchives {
+    repositories.mavenDeployer {
+        repository(url: uri(new File(rootDir.parent, 'dwvipRepo')))
     }
 }
 
+/*
+使用要求:
+定义jar.version = '1.0.0'
+定义project.group = 'com.dwvip.demolib'
+引用apply from: '../maven-release-jar.gradle'
+*/

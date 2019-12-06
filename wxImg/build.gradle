@@ -26,4 +26,5 @@ dependencies {
 }
 
 ext.aarPath='libs/wxImg-1.0.aar'
+group = 'com.dwvip.demolib'
 apply from: '../maven-release-exist-aar.gradle'
